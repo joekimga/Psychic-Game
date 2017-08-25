@@ -10,6 +10,7 @@ if {
 }
 */
 
+/*
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,15 @@ if {
 </head>
 <body>
 <script type="text/javascript">
+*/
+alert("You have 9 guesses.");
+
+var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var choices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+/* redundant
+var userGuess = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+*/
 
 var wins = 0;
 var losses = 0;
@@ -28,9 +38,13 @@ document.onkeyup = function(event) {
 
         console.log(userGuess.toLowerCase());
 
-        var computerGuess = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        var computerGuess = [];
 
-        var computerGuess = computerGuess[Math.floor(Math.random() * computerGuess.length)];
+
+
+        //['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
          
         console.log(computerGuess);
     
@@ -41,7 +55,13 @@ document.onkeyup = function(event) {
         }
 
        console.log(wins);
-        console.log(losses);
+       console.log(losses);
+
+
+
+
+
+getElement.id
 
       /* var html =
           "<p>Wins: " + userGuess + "</p>" +
@@ -55,12 +75,7 @@ var computerGuess = choices[Math.floor(Math.random() * choices.length)];
 
 
 
-
-
    };
-
-
-
 
 
 //wins, if computerGuess = userGuess
@@ -72,15 +87,3 @@ var computerGuess = choices[Math.floor(Math.random() * choices.length)];
 
 
 
-
-
-
-
-
-
-
-
-</script>
-
-</body>
-</html>
