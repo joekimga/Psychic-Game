@@ -10,15 +10,6 @@ if {
 }
 */
 
-/*
-<!DOCTYPE html>
-<html>
-<head>
-    <title>The Psychic Game</title>
-</head>
-<body>
-<script type="text/javascript">
-*/
 alert("You have 9 guesses.");
 
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -33,14 +24,16 @@ var losses = 0;
 var guesses = "9"
 
 
+
+
 document.onkeyup = function(event) {
-        var userGuess = event.key;
+        var userGuess = event.key
+
+
 
         console.log(userGuess.toLowerCase());
 
         var computerGuess = [];
-
-
 
         //['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
@@ -50,9 +43,13 @@ document.onkeyup = function(event) {
     
        if (userGuess === computerGuess) {
           wins++;
-        } else if (userGuess !== computerGuess) {
+        } 
+
+        else if (userGuess !== computerGuess) {
           losses++;
         }
+
+
 
        console.log(wins);
        console.log(losses);
@@ -61,22 +58,21 @@ document.onkeyup = function(event) {
 
 
 
-getElement.id
+//getElement.id
 
-      /* var html =
+      var html =
           "<p>Wins: " + userGuess + "</p>" +
           "<p>Losses: " + computerGuess + "</p>" +
           "<p>Guesses Left: " + wins + "</p>" +
           "<p>Your guesses so far: " + losses + "</p>" +
-          "<p>ties: " + ties + "</p>";*/
+          "<p>ties: " + ties + "</p>";
 
 
 var computerGuess = choices[Math.floor(Math.random() * choices.length)];
 
-
-
    };
-
+//put's it to the DOM
+//document.querySelector(.winsLosses);
 
 //wins, if computerGuess = userGuess
 //losses if computrGuess = userGuess

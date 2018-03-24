@@ -1,5 +1,23 @@
+h1 {
+ text-align: center;
+ }
+
+
+
 img {
-	
-	margin: auto;
+	display: block;
+	margin-left: : auto;
+	margin-right: auto;
+	text-align: center;
 }
 
+/*.backgroundPic {
+	display: block;
+	margin-left: : auto;
+	margin-right: auto;
+}
+*/
+
+body { 
+background-color: #8F2929;
+ }
