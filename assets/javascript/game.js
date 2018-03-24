@@ -22,7 +22,7 @@ var userGuess = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var wins = 0;
 var losses = 0;
 var guesses = "9"
-
+var ties = 0;
 
 
 
